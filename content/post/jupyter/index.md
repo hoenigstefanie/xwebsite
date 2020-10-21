@@ -269,3 +269,4 @@ ggplot(yield_curve_challenge, aes(x=date, y= diff)) +
 ```
 
 ![](final_plot.png)
+<img src="content/post/jupyter/final_plot.png" width="1000" height="1000">
