@@ -1,42 +1,9 @@
 ---
 authors:
 - admin
-categories: []
 date: "2020-10-21T00:00:00Z"
-draft: false
-featured: false
-gallery_item:
-- album: gallery
-  caption: Default
-  image: theme-default.png
-- album: gallery
-  caption: Ocean
-  image: theme-ocean.png
-- album: gallery
-  caption: Forest
-  image: theme-forest.png
-- album: gallery
-  caption: Dark
-  image: theme-dark.png
-- album: gallery
-  caption: Apogee
-  image: theme-apogee.png
-- album: gallery
-  caption: 1950s
-  image: theme-1950s.png
-- album: gallery
-  caption: Coffee theme with Playfair font
-  image: theme-coffee-playfair.png
-- album: gallery
-  caption: Strawberry
-  image: theme-strawberry.png
-image: 
-  focal_point: ""
-  preview_only: false
-projects: []
 subtitle: Predictive power with respect to recessions
 summary: Predictive power with respect to recessions
-tags: []
 title: Yield Curve Inversion
 ---
 
@@ -269,4 +236,3 @@ ggplot(yield_curve_challenge, aes(x=date, y= diff)) +
 ```
 
 ![](final_plot.png)
-<img src="content/post/jupyter/final_plot.png" width="1000" height="1000">

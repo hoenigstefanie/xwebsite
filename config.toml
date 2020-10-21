@@ -16,10 +16,10 @@ baseURL = "https://hoenigstefanie.netlify.app"
 #copyright = "Copyright &copy; {year}"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+#googleAnalytics = ""
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+#disqusShortname = ""
 
 ############################
 ## Advanced options below ##
@@ -60,8 +60,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   anchor = "smart"  # Anchor for cropping. Options include Smart and Center.
 
 # Taxonomies.
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  publication_type = "publication_types"
-  author = "authors"
+#[taxonomies]
+ # tag = "tags"
+  #category = "categories"
+  #publication_type = "publication_types"
+  #author = "authors"

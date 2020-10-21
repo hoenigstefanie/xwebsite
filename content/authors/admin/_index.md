@@ -25,10 +25,6 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/hoenigstefanie
-superuser: true
-user_groups:
-- Researchers
-- Visitors
 ---
 
 Stefanie Hoenig is a master's student in Financial Analysis at London Business School. She did her undergraduate programme at the Vienna University of Technology. The overall programme was Technical Mathematics and she specialized in Financial and Actuarial Mathematics. In her studies, she experienced the importance of coding since the programme was based on experiential learning, which was conducted in groups. Especially for Big Data, she realized the importance of R. Projects she worked on are for example generating an algorithmic trading strategy based on the idea of pairs trading or pricing of structured financial products. 
