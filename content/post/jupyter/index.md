@@ -99,7 +99,7 @@ ggplot(yield_curve, aes(x=date, y= price, color = var)) +
   NULL
 ```
 
-![](yield1)
+![](yield1.png)
 
 ### Monthly yields on US rates since 1999 on a year-by-year basis
 
@@ -127,7 +127,7 @@ yield_curve_2 <- yield_curve %>%
 
 ```
 
-![](yield2)
+![](yield2.png)
 
 ### Yields on 3-month and 10-year US Treasury rates since 1999
 
@@ -149,7 +149,7 @@ ggplot(yield_curve_3, aes(x=date, y= price, color = var)) +
   theme(legend.title=element_blank()) +
   NULL
 ```
-![](yield3)
+![](yield3.png)
 
 According to [Wikipedia's list of recession in the United States](https://en.wikipedia.org/wiki/List_of_recessions_in_the_United_States), since 1999 there have been two recession in the US: between Mar 2001–Nov 2001 and between Dec 2007–June 2009. \n
 Obviously, before each of both recessions, the yield curve seems to flatten as one can see in the second graph "US Yield curve". The yield curve flattens in 2001, before the first recession due to the burst of the dotcom bubble, and in years 2006 and 2007 before the housing crisis, the second recession. As shown in the graph, a yield curve flattening can mean a recession is coming in the US. However, it is not a clear signal; the inversion of a yield curve is. \n
