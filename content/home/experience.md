@@ -45,6 +45,5 @@ date_format = "Jan 2006"
   date_end = "2018-09-01"
   description = """Markets - Structured Products and Brokerage"""
 
-  
 +++
 

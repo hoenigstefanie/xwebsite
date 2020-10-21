@@ -45,5 +45,5 @@ title = "Academia"
 # HELLO, MY NAME IS 
 # **STEFANIE HOENIG**
 
-and together with my friends Hugo and Tom \
-I want to show you my technophilic side 
+and together with my friend Hugo \
+I show you my technophilic side 

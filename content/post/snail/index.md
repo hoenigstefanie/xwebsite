@@ -48,7 +48,13 @@ The following assumptions are based on historical data on monthly returns from F
 • ICE BofA US Corporate Index value, which tracks the performance of US dollar denominated investment grade rated corporate debt publicly is- sued in the US domestic market
 
 We will use several indices to explore 60/40 and Risk Parity in the context of MPT.
-We calculated them in excel and imported a CSV-File to R to plot the results. 
+We calculated them in excel and imported a CSV-File.
+
+{{< gdocs src="https://docs.google.com/spreadsheets/d/1isImvCvleeHIW65pFr7AM2wQ-QonolFHHyB9OxoweMQ/edit?usp=sharing">}}
+
+\
+We plot the imported data (Worksheet 2) in R using `ggplot`. 
+
 
 ```{r}
 ggplot(MidTerm_Invest_1_, aes(x=SD, y=mean, label = asset)) + 
