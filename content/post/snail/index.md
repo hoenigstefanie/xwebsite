@@ -1,7 +1,6 @@
 ---
 authors:
 - admin
-categories: []
 date: "2016-04-20T00:00:00Z"
 draft: false
 featured: false
@@ -31,86 +30,41 @@ gallery_item:
   caption: Strawberry
   image: theme-strawberry.png
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
   focal_point: ""
   preview_only: false
-lastmod: "2019-04-17T00:00:00Z"
+lastmod: "2020-10-21T00:00:00Z"
 projects: []
-subtitle: 'Create a beautifully simple website in under 10 minutes :rocket:'
-summary: Create a beautifully simple website in under 10 minutes.
-tags:
-- academia
-title: A Study of Snail Behavior
+subtitle: 'An alternative portfolio in financial crises'
+summary: An investment portfolio that outperforms in economic recessions
+title: Risk Parity
 ---
 
-**Create a free website with academia using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 _widgets_, _themes_, and _language packs_ included!**
+The traditional 60/40 portfolio – the mix of 60% equities and 40% bonds has been a mainstay of investment strategy for decades. Risk Parity is instead a much more recent asset allocation strategy. **Risk Parity** became very popular after the Great Financial Crisis, given that it performed better during the crisis than more traditional portfolios, such as 60/40. In recent years it has performed less well (see, for example, the WSJ article [“Are Risk-Parity Funds a Better Strategy for Diversification?”](https://www.wsj.com/articles/are-risk-parity-funds-a-better-strategy-for-diversification-1446805981)). But now investors wonder again if the 60/40 portfolio has a future (see, for example, the FT article [“Investors wonder if the 60/40 portfolio has a future”](https://www.ft.com/content/fdb793a4-712e-477f-9a81-7f67aefda21a)). \
+\
+The following assumptions are based on historical data on monthly returns from Feb 1973 – August 2020 on:
 
-[Check out the latest **demo**](https://academia-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the **showcase**](https://sourcethemes.com/academic/#expo) of personal, project, and business sites.
+• Wilshire 5000, an index with the goal to capture the market value of all US-stocks actively traded in the United States4 \
+• ICE BofA US Corporate Index value, which tracks the performance of US dollar denominated investment grade rated corporate debt publicly is- sued in the US domestic market
 
-- [**Setup academia**](#install)
-- [**Get Started**](https://sourcethemes.com/academic/docs/get-started/)
-- [View the documentation](https://sourcethemes.com/academic/docs/)
-- [Ask a question](http://discuss.gohugo.io/)
-- [Request a feature or report a bug](https://github.com/gcushen/hugo-academia/issues)
-- Updating? View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
-- Support development of academia:
-  - [Donate a coffee](https://paypal.me/cushen)
-  - [Become a backer on Patreon](https://www.patreon.com/cushen)
-  - [Decorate your laptop or journal with an academia sticker](https://www.redbubble.com/people/neutreno/works/34387919-academia)
-  - [Wear the T-shirt](https://academia.threadless.com/)
+We will use several indices to explore 60/40 and Risk Parity in the context of MPT.
+We calculated them in excel and imported a CSV-File to R to plot the results. 
 
-[![Screenshot](https://raw.githubusercontent.com/gcushen/hugo-academia/master/academia.png)](https://github.com/gcushen/hugo-academia/)
+```{r}
+ggplot(MidTerm_Invest_1_, aes(x=SD, y=mean, label = asset)) + 
+  geom_point() + 
+  labs(title= "",
+       y = "Expected Return",
+       x= "Volatility (standard deviation)") + 
+  theme_classic() +
+  theme(axis.title.x = element_text(size=10, face="bold"),
+axis.title.y = element_text( size=10, face="bold")
+) + expand_limits(x = 0, y = 0) +
+  geom_text(aes(label=asset), vjust = 0, nudge_y = -0.75, size = 3,fontface ="bold") +
+  scale_y_continuous(expand = c(0,0), limits = c(0,12.5), labels = function(x) paste0(x, "%")) +
+  scale_x_continuous(expand = c(0,0), limits = c(0,20), labels = function(x) paste0(x, "%")) +
+  NULL
+```
 
-**Key features:**
+![](00007f.png)
 
-- **Page builder** - Create *anything* with [**widgets**](https://sourcethemes.com/academic/docs/page-builder/) and [**elements**](https://sourcethemes.com/academic/docs/writing-markdown-latex/)
-- **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
-- **Create content** in [**Markdown**](https://sourcethemes.com/academic/docs/writing-markdown-latex/), [**Jupyter**](https://sourcethemes.com/academic/docs/jupyter/), or [**RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
-- **Plugin System** - Fully customizable [**color** and **font themes**](https://sourcethemes.com/academic/themes/)
-- **Display Code and Math** - Code highlighting and [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) supported
-- **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
-- **Beautiful Site** - Simple and refreshing one page design
-- **Industry-Leading SEO** - Help get your website found on search engines and social media
-- **Media Galleries** - Display your images and videos with captions in a customizable gallery
-- **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
-- **Multi-language** - 15+ language packs including English, 中文, and Português
-- **Multi-user** - Each author gets their own profile page
-- **Privacy Pack** - Assists with GDPR
-- **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
-- **One-Click Deployment** - No servers. No databases. Only files.
-
-## Color Themes
-
-academia comes with **day (light) and night (dark) mode** built-in. Click the sun/moon icon in the top right of the [Demo](https://academia-demo.netlify.com/) to see it in action!
-
-Choose a stunning color and font theme for your site. Themes are fully customizable and include:
-
-{{< gallery >}}
-
-## Ecosystem
-
-* **[academia Admin](https://github.com/sourcethemes/academia-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
-* **[academia Scripts](https://github.com/sourcethemes/academia-scripts):** Scripts to help migrate content to new versions of academia
-
-## Install
-
-You can choose from one of the following four methods to install:
-
-* [**one-click install using your web browser (recommended)**](https://sourcethemes.com/academic/docs/install/#install-with-web-browser)
-* [install on your computer using **Git** with the Command Prompt/Terminal app](https://sourcethemes.com/academic/docs/install/#install-with-git)
-* [install on your computer by downloading the **ZIP files**](https://sourcethemes.com/academic/docs/install/#install-with-zip)
-* [install on your computer with **RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
-
-Then [personalize and deploy your new site](https://sourcethemes.com/academic/docs/get-started/).
-
-## Updating
-
-[View the Update Guide](https://sourcethemes.com/academic/docs/update/).
-
-Feel free to *star* the project on [Github](https://github.com/gcushen/hugo-academia/) to help keep track of [updates](https://sourcethemes.com/academic/updates).
-
-## License
-
-Copyright 2016-present [George Cushen](https://georgecushen.com).
-
-Released under the [MIT](https://github.com/gcushen/hugo-academia/blob/master/LICENSE.md) license.
+First of all it is obvious, that regarding the risk and return relationship portfolios perform decisively better than assets itself. For example, bonds (here: ICE BofA US Corp) and the 60/40 portfolio have the same risk but the return for the 60/40 portfolio is slightly higher (3%). Similar observation can be made for equities and the RP portfolio. They have nearly the same return but equities have a higher volatility and therefore risk (8%). To get an in-depth comparison one can have a look at the Sharpe Ratio. Indeed, this is exactly driving the attractiveness of the RP portfolio. Moreover, it is safer than a classic 60/40 portfolio as it is actually a 30/70 portfolio. Espe- cially nowadays it is more useful to invest in a 30/70 portfolio rather than a 60/40 portfolio as the equity market is very volatile and unpredictable and the performance of the 60/40 portfolio lacks.

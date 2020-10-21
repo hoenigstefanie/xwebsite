@@ -2,10 +2,7 @@
 authors:
 - admin
 avatar_image: user-full.png
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
-btn:
-- label: Download Resume
-  url: https://sourcethemes.com/academic/docs/install/
+bio: 
 display_education: false
 education:
   courses:
@@ -20,35 +17,30 @@ education:
     year: 2008
 email: ""
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-name: Michael Vahn
+name: Stefanie Hoenig
 organizations:
-- name: Stanford University
+- name: London Business School
   url: ""
-role: Professor of Artificial Intelligence
+role: Student Masters in Financial Analysis
 social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/hoenigstefanie
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/stefanie-hoenig/
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/hoenigstefanie
 superuser: true
 user_groups:
 - Researchers
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Stefanie Hoenig is a master's student in Financial Analysis at London Business School. She did her undergraduate programme at the Vienna University of Technology. The overall programme was Technical Mathematics and she specialized in Financial and Actuarial Mathematics. In her studies, she experienced the importance of coding since the programme was based on experiential learning, which was conducted in groups. Especially for Big Data, she realized the importance of R. Projects she worked on are for example generating an algorithmic trading strategy based on the idea of pairs trading or pricing of structured financial products. 
 
-![reviews](../../img/certifacates.jpg)
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum. The point of using Lorem Ipsum. distracted by the readable content of a page.
+Having interned in several market departments, especially Structuring, which aroused her interest at an early stage in her career, she is eager to work within a broad range of interconnected sales and trading teams, creating transformational transactions with her technical skillset.
