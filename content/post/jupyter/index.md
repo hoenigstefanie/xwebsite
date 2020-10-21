@@ -37,7 +37,7 @@ projects: []
 subtitle: Predictive power with respect to recessions
 summary: Predictive power with respect to recessions
 tags: []
-title: Yield curve inversion
+title: Yield Curve Inversion
 ---
 
 Every so often, we hear warnings from commentators on the "inverted yield curve" and its predictive power with respect to recessions. An explainer what a [inverted yield curve is can be found here](https://www.reuters.com/article/us-usa-economy-yieldcurve-explainer/explainer-what-is-an-inverted-yield-curve-idUSKBN1O50GA). 

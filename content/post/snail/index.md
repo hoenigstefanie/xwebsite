@@ -43,7 +43,8 @@ The traditional 60/40 portfolio – the mix of 60% equities and 40% bonds has be
 \
 The following assumptions are based on historical data on monthly returns from Feb 1973 – August 2020 on:
 
-• Wilshire 5000, an index with the goal to capture the market value of all US-stocks actively traded in the United States4 \
+• Wilshire 5000, an index with the goal to capture the market value of all US-stocks actively traded in the United States \
+\
 • ICE BofA US Corporate Index value, which tracks the performance of US dollar denominated investment grade rated corporate debt publicly is- sued in the US domestic market
 
 We will use several indices to explore 60/40 and Risk Parity in the context of MPT.
